@@ -16,14 +16,14 @@ describe("cafetownsend page object",function () {
         jasmine.DEFAULT_TIMEOUT_INTERVAL = 50000;
     });
 
-    xit("login test", function () {
+    it("login test", function () {
         TownsendHomepage.get();
         TownsendHomepage.login('Luke', 'Skywalker');
         expect(TownsendHomepage.showErrorMsg.isPresent()).toEqual(false);
     
     });
 
-    xit("login and create user", function (done) {
+    it("login and create user", function (done) {
         TownsendHomepage.get();
         TownsendHomepage.setName('Luke');
         //to test if value is set properly
@@ -48,7 +48,7 @@ describe("cafetownsend page object",function () {
     });
 
  
-  xit("Update test ", function () {
+  it("Update test ", function () {
         TownsendHomepage.get();
         TownsendHomepage.login('Luke', 'Skywalker');
         var employeeToEdit = require('../pages/employeePage.js')
@@ -79,7 +79,7 @@ describe("cafetownsend page object",function () {
     });
 });
 
-xdescribe("Test with data provider for login ", function () {
+describe("Test with data provider for login ", function () {
         using(loginDetails.loginData, function (data) {
             it("paramatrized login test with data: " +data.user_name, function () {
                 TownsendHomepage.get();
