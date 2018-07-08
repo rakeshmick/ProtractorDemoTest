@@ -8,9 +8,10 @@
   },
   "author": "Rakesh Prabhakaran",
   "license": "ISC",
-  "dependencies":{
+  "dependencies": {
     "jasmine-data-provider": "^2.2.0",
     "jasmine-spec-reporter": "^4.2.1",
-    "protractor": "^5.3.2"
+    "protractor": "^5.3.2",
+    "protractor-expected-conditions-for-all-elements": "^1.0.0"
   }
 }
